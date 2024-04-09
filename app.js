@@ -6,9 +6,10 @@ const cors=require('cors');
 app.use(cors());
 app.use(bodyParser());
 
+var ABC={color:"orange",age:5,animal:"cat"};
+
 app.get("/",function a(req,res){
-    res.send("Hello World");
-    console.log(req);
+    res.send(ABC);
 });
 
 
